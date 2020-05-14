@@ -11,9 +11,9 @@
 } */
 
 body {
-    background: url(/images/bg-top.svg);
+    background: url(./images/bg-top.svg);
     background-repeat: no-repeat;
-    background-position: -1180% -4%;
+    background-position: right top;
     font-family: 'Montserrat', sans-serif;
     background-color: hsl(240, 78%, 98%);
     display: flex;
