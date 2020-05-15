@@ -6,21 +6,23 @@
     box-sizing: border-box;
 }
 
-/* html { 
-    background: url(images/bg-top.svg);
-} */
-
 body {
-    background: url(./images/bg-top.svg);
+    background-image: url(./images/bg-top.svg), url(./images/bg-bottom.svg);
     background-repeat: no-repeat;
-    background-position: right top;
-    font-family: 'Montserrat', sans-serif;
+    background-position: 180px -30px,  bottom left;
     background-color: hsl(240, 78%, 98%);
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+}
+
+body:before {
+    display: block;
+    content: '';
+
 }
 
 header {
@@ -40,8 +42,13 @@ header h2 {
 .toggle-btn {
     display: flex;
     width: 65%;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     padding-bottom: 60px;
+}
+
+.toggle-btn label {
+    margin: 0 10px 0 10px;
 }
 
 .toggle-btn p {
@@ -176,3 +183,19 @@ h3 {
 .switch {
     margin-top: -6px;
 }
+
+
+@media (min-width: 1024px) {
+    body {
+        background-position: top right,  bottom left;
+    }
+
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .pro {
+        margin: -30px 0 0 0;
+    }
+} 
