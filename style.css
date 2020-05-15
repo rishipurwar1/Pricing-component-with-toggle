@@ -185,7 +185,7 @@ h3 {
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 800px) {
     body {
         background-position: top right,  bottom left;
     }
